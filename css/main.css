@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-color: #527fdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section > .container{
+    width: 450px;
+    height: auto;
+    padding: 25px 50px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.container > .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.heading > h1{
+    font-size: 30px;
+    color: #527fdf;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.container .body{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body .btn{
+    outline: none;
+    color: #fff;
+    border: 1px solid #527fdf;
+    background-color: #527fdf;
+    width: 50px;
+    height: 50px;
+    transition: .4s ease;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.body .btn:active{
+    background-color: #fff;
+    color: #527fdf;
+}
+
+.modal{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal i{
+    font-size: 200px;
+}
+
+.modal.active i{
+    color: green;
+}
+.modal.noActive i{
+    color: red;
+}
+.modal.error i{
+    color: crimson;
+}
